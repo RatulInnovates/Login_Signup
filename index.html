@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0 box-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for transitions */
+      .form-box {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+          visibility 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body
+    class="font-poppins flex justify-center items-center min-h-screen w-full bg-gradient-to-r from-slate-400 to-white p-4"
+  >
+    <!-- Main Container -->
+    <div
+      class="container flex flex-col md:flex-row justify-center items-center relative w-full max-w-[45rem] bg-white rounded-[30px] shadow-2xl overflow-hidden"
+    >
+      <!-- Login Form -->
+      <div
+        class="form-box login w-full md:w-1/2 h-full bg-green-700 flex items-center justify-center text-center text-[#333] transition-transform duration-500 ease-in-out"
+      >
+        <form action="" class="w-full px-8">
+          <h1 class="text-3xl font-bold mb-6">Login</h1>
+          <div class="input-box relative mb-6">
+            <input
+              type="text"
+              placeholder="Username"
+              required
+              class="w-full p-3 bg-[#eee] rounded-xl border-none outline-none text-[#333] placeholder:text-[#888] focus:border-2 focus:border-[#7494ec]"
+            />
+            <i
+              class="bx bxs-user absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+            ></i>
+          </div>
+          <div class="input-box relative mb-6">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              class="w-full p-3 bg-[#eee] rounded-xl border-none outline-none text-[#333] placeholder:text-[#888] focus:border-2 focus:border-[#7494ec]"
+            />
+            <i
+              class="bx bxs-lock-alt absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+            ></i>
+          </div>
+          <div class="forgot-link mb-6">
+            <a href="#" class="text-[#333] hover:text-[#7494ec]"
+              >Forgot Password?</a
+            >
+          </div>
+          <button
+            type="submit"
+            class="login-btn w-full p-3 bg-[#7494ec] rounded-xl shadow-2xl border-none outline-none cursor-pointer text-white font-semibold hover:bg-[#5a7bd6] transition-colors duration-300"
+          >
+            Login
+          </button>
+          <p class="text-sm my-4">or login with social platforms</p>
+          <div class="social-icons flex justify-center gap-4">
+            <a href="#"
+              ><i
+                class="bx bxl-google text-2xl p-2 border-2 border-gray-300 rounded-full text-[#333] hover:bg-[#7494ec] hover:text-white transition-colors duration-300"
+              ></i
+            ></a>
+            <a href="#">
+              <i
+                class="bx bxl-facebook-circle text-2xl p-2 border-2 border-gray-300 rounded-full text-[#333] hover:bg-[#7494ec] hover:text-white transition-colors duration-300"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="bx bxl-github text-2xl p-2 border-2 border-gray-300 rounded-full text-[#333] hover:bg-[#7494ec] hover:text-white transition-colors duration-300"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="bx bxl-linkedin-square text-2xl p-2 border-2 border-gray-300 rounded-full text-[#333] hover:bg-[#7494ec] hover:text-white transition-colors duration-300"
+              ></i>
+            </a>
+          </div>
+          <p class="text-sm mt-4">
+            Don't have an account?
+            <a
+              href="#"
+              id="register-link"
+              class="text-[#7494ec] hover:underline"
+              >Register</a
+            >
+          </p>
+        </form>
+      </div>
+
+      <!-- Registration Form -->
+      <div
+        class="form-box register w-full md:w-1/2 h-full bg-green-700 flex items-center justify-center text-center text-[#333] absolute top-0 right-0 transform translate-x-full transition-transform duration-500 ease-in-out"
+      >
+        <form action="" class="w-full px-8">
+          <h1 class="text-3xl font-bold mb-6">Register</h1>
+          <div class="input-box relative mb-6">
+            <input
+              type="text"
+              placeholder="Username"
+              required
+              class="w-full p-3 bg-[#eee] rounded-xl border-none outline-none text-[#333] placeholder:text-[#888] focus:border-2 focus:border-[#7494ec]"
+            />
+            <i
+              class="bx bxs-user absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+            ></i>
+          </div>
+          <div class="input-box relative mb-6">
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              class="w-full p-3 bg-[#eee] rounded-xl border-none outline-none text-[#333] placeholder:text-[#888] focus:border-2 focus:border-[#7494ec]"
+            />
+            <i
+              class="bx bxs-envelope absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+            ></i>
+          </div>
+          <div class="input-box relative mb-6">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              class="w-full p-3 bg-[#eee] rounded-xl border-none outline-none text-[#333] placeholder:text-[#888] focus:border-2 focus:border-[#7494ec]"
+            />
+            <i
+              class="bx bxs-lock-alt absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+            ></i>
+          </div>
+          <button
+            type="submit"
+            class="register-btn w-full p-3 bg-[#7494ec] rounded-xl shadow-2xl border-none outline-none cursor-pointer text-white font-semibold hover:bg-[#5a7bd6] transition-colors duration-300"
+          >
+            Register
+          </button>
+          <p class="text-sm mt-4">
+            Already have an account?
+            <a href="#" id="login-link" class="text-[#7494ec] hover:underline"
+              >Login</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
